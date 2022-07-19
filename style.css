@@ -1,0 +1,112 @@
+/* ============================================== */
+/* ---------------- google fonts ------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ============================================== */
+/* -------------------- reset -------------- */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ============================================== */
+/* ----------------- variables -------------- */
+
+:root{
+    /* ------ colors ------ */
+    --primary-color:#212529;
+    --secondary-color:#e81f3e;
+    --white: #fff;
+
+    /* -------- fonts ------ */
+    --px70: 4.375rem;
+    --px40: 2.5rem;
+    --px20: 1.25rem;
+    --px18: 1.125;
+}
+
+/* ============================================== */
+/* ----------------- common part / utilities -------------- */
+
+section.top_banner_container {
+    width: 1600px;
+    margin: 0 auto;
+}
+/*---- buttons ---  */
+.btn{
+    width: 187px;
+    height: 56px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: var(--px20);
+    border: none;
+    background-color:var(--secondary-color);
+    color:var(--white);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+/* ========================================================= */
+/* ----------------- top banner section -------------- */
+
+.top_banner_area {
+    width: 1321px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.top_banner_text {
+    padding: 111px 0 111px 106px;
+}
+
+.banner_title {
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.banner_text {
+    margin: 13px 0 30px;
+}
+
+
+.watch_live i {
+    margin-left: 5px;
+}
+
+.top_banner_img {
+    text-align: center;
+}
+
+/* ------- end top banner area --------- */
+
+/* ========================================================= */
+/* ----------------- navbar and card area -------------- */
