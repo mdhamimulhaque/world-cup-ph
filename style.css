@@ -12,7 +12,8 @@
 }
 
 body{
-    width: 100%;
+    /* width: 1600px;
+    margin: 0 auto; */
     min-height: 100vh;
 }
 
@@ -32,6 +33,8 @@ a{
     --primary-color:#212529;
     --secondary-color:#e81f3e;
     --white: #fff;
+    --light:#E8E8E8;
+    --gray:#B9B9B9
 
     /* -------- fonts ------ */
     --px70: 4.375rem;
@@ -43,8 +46,9 @@ a{
 /* ============================================== */
 /* ----------------- common part / utilities -------------- */
 
-section.top_banner_container {
-    width: 1600px;
+
+.top_banner_container,.navbar_blog_container,.footer_area{
+    width: 1321px;
     margin: 0 auto;
 }
 /*---- buttons ---  */
@@ -71,7 +75,7 @@ section.top_banner_container {
 }
 
 /* ========================================================= */
-/* ----------------- top banner section -------------- */
+/* ----------------- top banner section start-------------- */
 
 .top_banner_area {
     width: 1321px;
@@ -106,7 +110,158 @@ section.top_banner_container {
     text-align: center;
 }
 
-/* ------- end top banner area --------- */
+/*================  top banner area end ================*/
 
 /* ========================================================= */
-/* ----------------- navbar and card area -------------- */
+/* ----------------- navbar-blog area start-------------- */
+
+.navbar_blog_container {
+    padding: 130px 0;
+}
+/* ----- navbar start ----- */
+.nav_box {
+    width: 312px;
+    height: 312px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+}
+.nav_box ul {
+    display: grid;
+    grid-row-gap: 30px;
+}
+.nav_box ul li {
+    background: var(--white);
+    border-radius: 10px;
+    width: 252px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.nav_box ul li a {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: var(--px20);
+    transition: all .3s ease-in-out;
+}
+.nav_box ul li:active{
+    background: var(--secondary-color);
+}
+.nav_box ul li:hover a{
+    color:var(--white);
+}
+.nav_box ul li:hover{
+    background: var(--secondary-color);
+}
+/* ------ navbar end --------*/
+/* ------ blog-card start --------*/
+.nav_blog_area {
+    display: flex;
+    gap: 24px;
+}
+
+aside.blog_area {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+}
+
+.blog_card {
+    width: 312px;
+    height: 362px;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+}
+.card_img img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.transfer_brn {
+    width: 100px;
+    height: 32px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 15px 0 10px;
+}
+
+.card_text_box,.card_footer {
+    padding: 0 20px;
+}
+
+.card_title {
+    font-weight: 600;
+    font-size: var(--px18);
+}
+
+.card_footer {
+    margin: 15px 0 10px;
+    color: rgba(22, 22, 22, 0.7);;
+}
+
+.card_footer span {
+    margin-right: 30px;
+}
+
+.card_footer i {
+    margin-right: 10px;
+}
+
+/* ------ blog-card start --------*/
+
+/* =============== navbar-blog area end ================ */
+
+/* ======================================================= */
+/* --------------- footer area start ------------------ */
+footer.footer_container {
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+.footer_area h2 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 130px;
+}
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px 0;
+}
+.footer_items ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.footer_items ul li a{
+  color: var(--gray);
+  font-weight: 500;
+  transition: .3s;
+}
+.footer_items ul li a:hover{
+  color: var(--secondary-color);
+}
+
+/* --- social media --- */
+section.social_media {
+    padding: 50px 0 130px;
+    font-size: 28px;
+}
+section.social_media i {
+    margin: 0 3px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+section.social_media i:hover{
+    color: var(--secondary-color);
+}
+/* =============== footer area end ================ */
