@@ -34,7 +34,7 @@ a{
     --secondary-color:#e81f3e;
     --white: #fff;
     --light:#E8E8E8;
-    --gray:#B9B9B9
+    --gray:#B9B9B9;
 
     /* -------- fonts ------ */
     --px70: 4.375rem;
@@ -93,7 +93,7 @@ a{
 }
 
 .banner_title {
-    font-size: 70px;
+    font-size: var(--px70);
     line-height: 80px;
 }
 
@@ -175,7 +175,7 @@ aside.blog_area {
     width: 312px;
     height: 362px;
     border-radius: 10px;
-    border: 1px solid #E8E8E8;
+    border: 1px solid var(--light);
 }
 .card_img img {
     width: 100%;
@@ -226,7 +226,7 @@ footer.footer_container {
     text-align: center;
 }
 .footer_area h2 {
-    font-size: 40px;
+    font-size: var(--px40);
     font-weight: 600;
     padding-top: 130px;
 }
@@ -251,7 +251,7 @@ hr {
 /* --- social media --- */
 section.social_media {
     padding: 50px 0 130px;
-    font-size: 28px;
+    font-size: var(--px40);
 }
 section.social_media i {
     margin: 0 3px;
