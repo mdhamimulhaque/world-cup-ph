@@ -74,6 +74,14 @@ a{
     border: 1px solid var(--secondary-color);
 }
 
+#active{
+    background-color:var(--secondary-color);
+    border: none;
+}
+#active_text{
+    color:var(--white);
+}
+
 /* ========================================================= */
 /* ----------------- top banner section start-------------- */
 
