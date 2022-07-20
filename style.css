@@ -263,6 +263,9 @@ section.social_media {
     padding: 50px 0 130px;
     font-size: var(--px40);
 }
+section.social_media a{
+    color: var(--white);
+}
 section.social_media i {
     margin: 0 3px;
     transition: .3s;
@@ -274,6 +277,7 @@ section.social_media i {
 section.social_media i:hover{
     color: var(--secondary-color);
 }
+
 /* =============== footer area end ================ */
 
 
