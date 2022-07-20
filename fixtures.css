@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.match_card {
+    border-radius: 10px;
+    border: 1px solid var(--light);
+    padding: 30px;
+}
+
+.match_flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.match_flag img{
+    width: 94px;
+   height: 56px;
+}
+
+.match_text_box {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.match_text_box .team_name {
+    font-size: var(--px20);
+    font-weight: 600;
+}
+
+.time_date {
+    font-weight: 400;
+    color: var(--gray);
+    margin-top: 5px;
+}
+
+@media screen and (min-width : 993px) and (max-width:1024px) {
+    .match_card {
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:576px){
+    .match_card {
+        padding: 15px;
+    }
+}
