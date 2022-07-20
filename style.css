@@ -94,10 +94,18 @@ a{
     grid-template-columns: repeat(2,1fr);
     border-radius: 30px;
     margin-top: 50px;
+    overflow-x: hidden;
 }
 
 .top_banner_text {
-    padding: 111px 0 111px 106px;
+            padding: 111px 0 111px 106px;
+            -webkit-animation: top_banner_text_animation 2s  ;
+            animation: top_banner_text_animation 2s  ;
+            transition:.3s ;
+            -webkit-transition:.3s ;
+            -moz-transition:.3s ;
+            -ms-transition:.3s ;
+            -o-transition:.3s ;
 }
 
 .banner_title {
@@ -113,9 +121,56 @@ a{
 .watch_live i {
     margin-left: 5px;
 }
+.top_banner_img {
+    -webkit-animation: top_banner_img_animation 2s  ;
+    animation: top_banner_img_animation 2s  ;
+    transition:.3s ;
+    -webkit-transition:.3s ;
+    -moz-transition:.3s ;
+    -ms-transition:.3s ;
+    -o-transition:.3s ;
+}
 .top_banner_img img{
     width: 70%;
 }
+
+
+
+
+  @keyframes top_banner_text_animation {
+    0% {
+             transform: translateX(-200px);
+             -webkit-transform: translateX(-200px);
+             -moz-transform: translateX(-200px);
+             -ms-transform: translateX(-200px);
+             -o-transform: translateX(-200px);
+}
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+}
+}
+
+@keyframes top_banner_img_animation {
+    0% {
+             transform: translateX(200px);
+             -webkit-transform: translateX(200px);
+             -moz-transform: translateX(200px);
+             -ms-transform: translateX(200px);
+             -o-transform: translateX(200px);
+}
+    100% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+}
+}
+
 
 
 /*================  top banner area end ================*/
